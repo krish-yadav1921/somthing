@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Kanak 🎂</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      font-family: 'Sacramento', cursive;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: pre-wrap;
+      border-right: 2px solid #000;
+      animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: black; }
+    }
+
+    #letter {
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+    }
+
+    #letter.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+  <!-- Heading -->
+  <h1 class="text-5xl text-pink-600 mb-6">🎉 Happy Birthday Kanak 🎉</h1>
+
+  <!-- Letter -->
+  <div id="letter" class="typewriter text-2xl text-gray-700 max-w-2xl text-center whitespace-pre-wrap hidden">
+Dear Kanak,  
+May your year be filled with love, laughter, and countless memories.  
+You're not just special – you're unforgettable.  
+
+With all my heart,  
+— Krish 💖
+  </div>
+
+  <!-- Show Document Button -->
+  <button id="showDocBtn" class="mt-6 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full shadow-lg transition hidden">
+    📄 View Special Document
+  </button>
+
+  <!-- Document Section -->
+  <div id="docSection" class="mt-8 w-full max-w-3xl bg-white p-6 rounded-xl shadow-lg hidden">
+    <h2 class="text-2xl font-semibold text-pink-600 mb-4">📄 Special Document</h2>
+    <iframe src="Krishhhhhhhhh.pdf" class="w-full h-[500px] border border-gray-300 rounded-lg"></iframe>
+    <div class="mt-4 text-center">
+      <a href="Krishhhhhhhhh.pdf" download class="inline-block bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-full shadow transition">
+        Download as PDF 📥
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Confetti on load
+    function launchConfetti() {
+      var duration = 3 * 1000;
+      var end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 }
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 }
+        });
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }
+
+    // Show letter after page load
+    window.onload = () => {
+      launchConfetti();
+
+      const letter = document.getElementById('letter');
+      letter.classList.remove('hidden');
+      setTimeout(() => {
+        letter.classList.add('show');
+        document.getElementById('showDocBtn').classList.remove('hidden');
+      }, 500);
+    };
+
+    // Show PDF section on button click
+    document.getElementById('showDocBtn').addEventListener('click', () => {
+      document.getElementById('docSection').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

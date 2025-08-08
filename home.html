@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Kanak 🎂</title>
+
+  <!-- TailwindCSS and Confetti -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      font-family: 'Sacramento', cursive;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: pre-wrap;
+      border-right: 2px solid #000;
+      animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: black; }
+    }
+
+    #letter {
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+    }
+
+    #letter.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen text-center px-4 relative">
+
+  <!-- 🎉 Header -->
+  <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-fuchsia-500 via-pink-400 to-red-400 text-transparent bg-clip-text animate-pulse">
+    🎂 Happy Birthday Kanak
+  </h1>
+  <p class="text-2xl text-pink-600 mt-2 italic font-medium animate-bounce">
+    You are truly special ❤️
+  </p>
+
+  <!-- 🎈 Buttons -->
+  <div class="flex gap-4 mb-8 mt-6">
+
+       <a href="hjhhj.html">
+
+    <button id="showphotos" class="bg-blue-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full transition shadow-lg">Photos</button>
+
+    </a>
+
+    <a href="effects.html">
+      <button id="showLetter" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full transition shadow-lg">
+      Read a Letter 💌
+    </button>
+
+    </a>
+
+   
+
+    <button onclick="document.getElementById('bg-music').play()" class="bg-white text-pink-600 px-5 py-2 rounded-full border border-pink-400 hover:bg-pink-100 shadow">
+      Play Music 🎶
+    </button>
+
+     <div class="text-center">
+   
+  </div>
+
+  <!-- 💌 Letter -->
+
+
+  <!-- 🎵 Background Music -->
+  <audio id="bg-music" loop>
+    <source src="WhatsApp Audio 2025-07-29 at 23.26.43_048db275.dat.unknown" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- ❤️ Heart Emojis -->
+  <div class="absolute bottom-5 right-5 animate-bounce text-pink-400 text-4xl">❤️</div>
+  <div class="absolute bottom-5 left-5 animate-bounce text-pink-400 text-4xl">❤️</div>
+
+  <!-- 🎉 Script -->
+  <script>
+    document.getElementById("showLetter").addEventListener("click", () => {
+      const letter = document.getElementById("letter");
+      const doc = document.getElementById("docSection");
+
+      letter.classList.remove("hidden");
+      setTimeout(() => {
+        letter.classList.add("show");
+      }, 100);
+
+      // Show document section after letter appears
+      setTimeout(() => {
+        doc.classList.remove("hidden");
+      }, 4500); // After typewriter finishes
+
+      // 🎊 Confetti
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    });
+  </script>
+
+</body>
+</html>

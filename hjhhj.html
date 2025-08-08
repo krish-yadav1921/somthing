@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html style="--n: 20">
+<head>
+  <meta charset="UTF-8" />
+  <title>Infinite scroll circular gallery</title>
+  <link rel="stylesheet" href="indexx.css">
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="7.13"></feTurbulence>
+      <feColorMatrix type="saturate" values="0"></feColorMatrix>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".02"></feFuncA>
+      </feComponentTransfer>
+      <feBlend in2="SourceGraphic"></feBlend>
+    </filter>
+  </svg>
+
+<header>
+
+    <h1>
+        Don't take these photos back
+    </h1>
+
+</header>
+
+  <main class="scene">
+    <section class="assembly">
+
+     <article style="--i: 0; --url: url(IMG_20240606_132748_330.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240606_132748_330.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+      <article style="--i: 2; --url: url(IMG-20240617-WA0000.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG-20240617-WA0000.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 3; --url: url(IMG-20240617-WA0003.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG-20240617-WA0003.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+
+
+
+<article style="--i: 4; --url: url(Screenshot\ 2025-07-28\ 204819.png); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Screenshot 2025-07-28 204819.png" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 5; --url: url(IMG-20240617-WA0011.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG-20240617-WA0011.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 6; --url: url(IMG_20240519_171847_738.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240519_171847_738.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 7; --url: url(IMG_20240529_124426.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240529_124426.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 8; --url: url(IMG_20240611_132622_848.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240611_132622_848.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 9; --url: url(IMG_20240611_132626_930.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240611_132626_930.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 10; --url: url(IMG_20240720_113331_883.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240720_113331_883.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+
+<article style="--i: 11; --url: url(IMG_20240929_193336_388.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240929_193336_388.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 12; --url: url(IMG_20240929_193353_005.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="IMG_20240929_193353_005.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+
+      <!-- Sample -->
+      <article style="--i: 1; --url: url(IMG_20240606_132803_115.jpg); --pos: 75% 65%">
+        <header>
+          <h2>Elephant</h2>
+          <em>Elephas maximus</em>
+        </header>
+        <figure>
+          <img src="IMG_20240606_132803_115.jpg" alt="elephant">
+          <figcaption>by <a href="https://unsplash.com" target="_blank">Alex Azabache</a></figcaption>
+        </figure>
+      </article>
+
+      <article style="--i: 13; --url: url(Snapchat-1519831816_1.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Snapchat-1519831816_1.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 14; --url: url(Snapchat-1736616710.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Snapchat-1736616710.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 15; --url: url(Snapchat-1923090790.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Snapchat-1923090790.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 16; --url: url(Snapchat-2060567943.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Snapchat-2060567943.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+<article style="--i: 17; --url: url(Snapchat-694867939.jpg); --pos: 50% 50%">
+  <header>
+    <h2>Krish Raj</h2>
+    <em>Human Being</em>
+  </header>
+  <figure>
+    <img src="Snapchat-694867939.jpg" alt="Photo of Krish Raj">
+    <figcaption>by <a href="#" target="_blank">Krish Raj</a></figcaption>
+  </figure>
+</article>
+
+      
+
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <aside>
+    <p class="box-info-scrollani">
+      Sorry, your browser does not appear to support scroll-driven animation.
+    </p>
+  </aside>
+</body>
+</html>

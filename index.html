@@ -30,6 +30,15 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.8; }
     }
+
+    @keyframes blinkRing {
+  0%, 100% { box-shadow: 0 0 0 2px white, 0 0 0 8px #f9a8d4; }
+  50% { box-shadow: 0 0 0 4px white, 0 0 0 8px transparent; }
+}
+
+.animate-blink-ring {
+  animation: blinkRing 1s infinite;
+}
     .animate-text {
       animation: animate-text 3s ease-in-out infinite;
     }
@@ -69,11 +78,11 @@
   </div>
 
   <!-- Decorations -->
-  <div class="absolute top-2 left-2 sm:top-5 sm:left-5">
-    <img src="Screenshot 2025-07-28 204819.png" class="w-20 sm:w-40" />
+  <div class="w-35 h-40 absolute top-2 left-2 sm:top-8 sm:left-5 rounded-full overflow-hidden border-4 ring-4  animate-blink-ring ">
+    <img src="IMG_20240720_113331_883.jpg" class="w-20 sm:w-40" />
   </div>
-  <div class="absolute top-2 right-2 sm:top-5 sm:right-5">
-    <img src="Screenshot 2025-07-28 204819.png" class="w-20 sm:w-40 transform rotate-180" />
+  <div class="absolute top-2 right-2 sm:top-9 sm:right-5 rounded-full overflow-hidden border-2 ring-2 animate-blink-image">
+    <img src="Screenshot 2025-07-28 204819.png" class="w-20 sm:w-40 " />
   </div>
   <div class="absolute bottom-2 right-5 sm:bottom-5 sm:right-10">
     <img src="Screenshot 2025-03-29 164601.png" class="w-6 sm:w-10 animate-bounce" />

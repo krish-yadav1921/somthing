@@ -17,9 +17,10 @@
     .btn {
       background: #ff6482;
       color: white;
-      padding: 10px 20px;
+      padding: 14px 28px;
       border-radius: 9999px;
       font-weight: bold;
+      font-size: 1.1rem;
       box-shadow: 0 4px #d64161;
       transition: transform 0.2s ease-in-out;
     }
@@ -30,15 +31,13 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.8; }
     }
-
     @keyframes blinkRing {
-  0%, 100% { box-shadow: 0 0 0 2px white, 0 0 0 8px #f9a8d4; }
-  50% { box-shadow: 0 0 0 4px white, 0 0 0 8px transparent; }
-}
-
-.animate-blink-ring {
-  animation: blinkRing 1s infinite;
-}
+      0%, 100% { box-shadow: 0 0 0 2px white, 0 0 0 8px #f9a8d4; }
+      50% { box-shadow: 0 0 0 4px white, 0 0 0 8px transparent; }
+    }
+    .animate-blink-ring {
+      animation: blinkRing 1s infinite;
+    }
     .animate-text {
       animation: animate-text 3s ease-in-out infinite;
     }
@@ -48,21 +47,21 @@
 
   <!-- Header -->
   <div class="text-center mt-6 sm:mt-10">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold birthday-text bg-gradient-to-r from-pink-500 via-red-400 to-yellow-400 text-transparent bg-clip-text animate-pulse">
+    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold birthday-text bg-gradient-to-r from-pink-500 via-red-400 to-yellow-400 text-transparent bg-clip-text animate-pulse">
       🎉 Happy
     </h1>
-    <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 animate-text">
+    <h2 class="text-5xl sm:text-6xl md:text-8xl font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 animate-text">
       Birthday My Bakli💕
     </h2>
-    <div class="mt-4 sm:mt-6">
-      <button class="btn text-sm sm:text-lg">21 Feb 2026</button>
-      <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 animate-text">
+    <div class="mt-6 sm:mt-8">
+      <button class="btn text-lg sm:text-xl">21 Feb 2026</button>
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mt-3 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 animate-text">
         Finally It's Come🫠
       </h1>
     </div>
-    <div class="mt-3">
+    <div class="mt-4">
       <a href="home.html">
-        <button class="btn bg-white text-pink-600 border border-pink-400 hover:bg-pink-100 text-sm sm:text-lg">
+        <button class="btn bg-white text-pink-600 border border-pink-400 hover:bg-pink-100 text-lg sm:text-xl">
           Click Here Kanak 💌
         </button>
       </a>
@@ -70,25 +69,25 @@
   </div>
 
   <!-- Profile Circle -->
-  <div class="mt-6 sm:mt-10 relative">
-    <div class="w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-white shadow-xl ring-4 ring-pink-300 hover:ring-yellow-400 transition-all duration-500 mx-auto">
+  <div class="mt-8 sm:mt-12 relative">
+    <div class="w-40 h-40 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-white shadow-xl ring-4 ring-pink-300 hover:ring-yellow-400 transition-all duration-500 mx-auto">
       <img src="Screenshot 2025-07-28 204819.png" alt="Kanak" class="w-full h-full object-cover">
     </div>
-    <p class="text-center text-lg sm:text-xl mt-2 text-pink-600 font-semibold">Dear Kanak</p>
+    <p class="text-center text-xl sm:text-2xl mt-3 text-pink-600 font-semibold">Dear Kanak</p>
   </div>
 
   <!-- Decorations -->
-  <div class="w-35 h-40 absolute top-2 left-2 sm:top-8 sm:left-5 rounded-full overflow-hidden border-4 ring-4  animate-blink-ring ">
-    <img src="IMG_20240720_113331_883.jpg" class="w-20 sm:w-40" />
+  <div class="w-28 h-28 sm:w-36 sm:h-36 absolute top-4 left-4 rounded-full overflow-hidden border-4 ring-4 animate-blink-ring">
+    <img src="IMG_20240720_113331_883.jpg" class="w-full h-full object-cover" />
   </div>
-  <div class="absolute top-2 right-2 sm:top-9 sm:right-5 rounded-full overflow-hidden border-2 ring-2 animate-blink-image">
-    <img src="Screenshot 2025-07-28 204819.png" class="w-20 sm:w-40 " />
+  <div class="w-28 h-28 sm:w-36 sm:h-36 absolute top-4 right-4 rounded-full overflow-hidden border-4 ring-4 animate-blink-ring">
+    <img src="Screenshot 2025-07-28 204819.png" class="w-full h-full object-cover" />
   </div>
-  <div class="absolute bottom-2 right-5 sm:bottom-5 sm:right-10">
-    <img src="Screenshot 2025-03-29 164601.png" class="w-6 sm:w-10 animate-bounce" />
+  <div class="absolute bottom-4 right-6 sm:bottom-6 sm:right-10">
+    <img src="Screenshot 2025-03-29 164601.png" class="w-10 sm:w-14 animate-bounce" />
   </div>
-  <div class="absolute bottom-2 left-5 sm:bottom-5 sm:left-10">
-    <img src="Screenshot 2025-03-15 122546.png" class="w-6 sm:w-10 animate-bounce" />
+  <div class="absolute bottom-4 left-6 sm:bottom-6 sm:left-10">
+    <img src="Screenshot 2025-03-15 122546.png" class="w-10 sm:w-14 animate-bounce" />
   </div>
 
 </body>

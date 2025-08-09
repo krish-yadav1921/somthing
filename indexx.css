@@ -1,3 +1,4 @@
+/* Tumhara original CSS pura yaha hai */
 @property --k {
 	syntax: '<number>';
 	initial-value: -1;
@@ -77,21 +78,12 @@ section {
 article, header, figure, img, figcaption { grid-area: 1/ 1 }
 
 article {
-	/* item progress value */
 	--j: var(--i)/var(--n);
-	/* linear difference between this item's progress value  
-	 * and progress value of highlighted item in front - 
-	 * it's a value in the [0, 1] interval */
 	--dif-lin: calc(var(--j) - mod(var(--k) + 1, 1));
-	/* absolute value of linear difference */
 	--abs-lin: abs(var(--dif-lin));
-	/* difference between middle & absolute linear difference */
 	--dif-mid: calc(.5 - var(--abs-lin));
 	--abs-mid: abs(var(--dif-mid));
-	/* relative distance to from this item 
-	 * to highlighted one in front */
 	--dif-arc: calc(2*(.5 - var(--abs-mid)));
-	/* relative distance limit */
 	--lim: .35;
 	--sel: max(0, calc((var(--lim) - var(--dif-arc))/var(--lim)));
 	--out: calc(1 - var(--sel));
@@ -132,7 +124,6 @@ article header, figure {
 			border-box #121212;
 	background-blend-mode: multiply, normal, normal;
 	isolation: isolate;
-	/* prevent edge glitching on article hover */
 	pointer-events: none;
 	transition: .35s ease-out;
 	transition-property: rotate, --ang;
@@ -148,7 +139,6 @@ article header, figure {
 	}
 }
 
-/* reverse from parent */
 h2, em, img, a { pointer-events: auto }
 
 h2, em, figcaption {
@@ -180,7 +170,6 @@ figcaption {
 	a { color: #370617 }
 }
 
-/* just support info boxes if it lacks support */
 aside {
 	position: fixed;
 	bottom: 0;
